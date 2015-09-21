@@ -14,7 +14,7 @@ public class Hello {
 		Reader reader =Resources.getResourceAsReader("SqlMapConfig.xml");
 		SqlSessionFactory sessionFactory=new SqlSessionFactoryBuilder().build(reader);
 		SqlSession session=sessionFactory.openSession();
-		Student student=new Student("yuess", "it", 89, 7659550, "642969318");
+		Student student=new Student("yuess", "it", 89, 7659550, "123456@qq.com");
 		session.insert("student.insert",student);
 		session.commit();
 		session.close();
